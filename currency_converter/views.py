@@ -55,10 +55,7 @@ class CurrencyListAPIView(generics.ListAPIView):
     Сериализация: Используется сериализатор CurrencyListAPISerializer для преобразования данных о валютах.
     Пагинация: Используется пагинация PageNumberPagination с размером страницы, заданным в настройках.
 
-    Пример использования:
-        Для получения списка всех валют, сделайте GET-запрос: ''
-
-        Возвращает список валют в формате JSON.
+    Возвращает список валют в формате JSON.
     """
     serializer_class = CurrencyListAPISerializer
     pagination_class = PageNumberPagination
